@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "C:/msys64/ucrt64/bin/gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "main.c",         // File trong math_utils
+                "math_utils.c",   // File trong math_utils
+                "-o",
+                "${workspaceFolder}/main.exe" // Tạo file thực thi trong math_utils
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}" // Thư mục hiện tại
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build main.c and math_utils.c"
+        }
+    ]
+}
