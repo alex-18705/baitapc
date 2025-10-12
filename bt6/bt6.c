@@ -144,6 +144,7 @@ int Nammoi(int a, int b){
         return (23-a)*60+(60-b);
     }
 }
+
 int main(){
     int t;
     scanf("%d", &t);
