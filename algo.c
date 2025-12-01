@@ -35,5 +35,6 @@ int main(){
     scanf("%d %d",&a, &n);
     printf("%lld\n", puissance(a,n));
     printf("fact %d la %lld\n", n, fact(n));
+    printf("hello everyone, this is support test github");
     return 0;
 }
